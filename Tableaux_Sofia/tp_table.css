@@ -1,0 +1,24 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table{
+    caption-side: bottom;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th{
+    border: 1px solid black;
+    background-color: #DDA0DD;
+}
+td{
+    height: 30px;
+    width: 250px;
+}
+.Quantité{
+    height: 20px;
+    width: 50px;
+    margin-left: 20px;
+}
+.check{
+        margin-left: 60px;
+}

@@ -1,0 +1,30 @@
+h1{
+    color:red;
+    text-align: center;
+    font-size: 3em;
+}
+h3{
+    color:blue;
+    font-size: 2em;
+}
+p{
+    background-color: grey;
+}
+strong{
+    font-style:normal;
+    color:yellowgreen; 
+}
+em{
+    font-style:normal;
+    text-decoration: underline;
+    font-size: 1.5em;
+    color:orange;
+}
+#pArticle3{
+    background-color: pink;
+}
+#tArticle3{
+    color:green;
+    text-align: right;
+    text-decoration: underline;
+}

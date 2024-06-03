@@ -1,0 +1,9 @@
+h1{
+    text-shadow: 6px -6px 4px #a32cc4 ;
+}
+#paragraphe1{
+    box-shadow: 2px 1px 15px red;
+}
+p{
+    box-shadow: -5px 8px 1px yellowgreen;
+}

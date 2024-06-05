@@ -1,0 +1,12 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: blueviolet;
+    text-decoration: underline;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    text-decoration: underline;
+    font-size: 1em;
+}

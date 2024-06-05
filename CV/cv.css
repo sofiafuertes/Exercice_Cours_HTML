@@ -1,0 +1,49 @@
+*{
+    margin: 1;
+    padding: 1;
+}
+img{
+    border-radius: 200px;
+    margin: 1;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+    background-color: antiquewhite;
+}
+h1{
+    text-align:left;
+    color: #556b2f;
+    margin: 0;
+}
+h2{
+    font-size: 1em;
+    text-align: left;
+    color: #556b2f;
+    margin: 0;
+}
+#presentation{
+    font-size: 0.5em;
+    text-align: left;
+}
+h3{
+    text-align: left;
+    text-decoration: underline;
+    font-size: 0.8em;
+}
+.poste{
+    font-weight: bold;
+    font-size: 0.5em;
+}
+.ecole{
+    font-weight: bold;
+    font-size: 0.5em;
+}
+p{
+    font-size: 0.5em;
+    text-align: justify;
+}
+.liste{
+    font-size: 0.5em;
+    text-align: justify;
+}

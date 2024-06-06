@@ -1,0 +1,23 @@
+body{
+    background-color: rosybrown;
+}
+h1{
+    text-align: center;
+}
+nav{
+    display: grid;
+    justify-items: center;
+}
+nav ul{
+    background-color: salmon;
+    width: 400px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+nav ul li{
+    display: grid;
+   align-items: center;
+}

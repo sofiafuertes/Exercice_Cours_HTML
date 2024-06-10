@@ -1,23 +1,87 @@
-body{
+html {
+    background-color: white;
+}
+
+body {
     background-color: rosybrown;
+    height: 50%;
 }
-h1{
+
+h1 {
     text-align: center;
+    margin-bottom: 0;
+    padding-top: 2%;
 }
-nav{
+
+nav {
     display: grid;
     justify-items: center;
+
 }
-nav ul{
+
+nav ul li {
+    display: grid;
+    align-items: center;
+    list-style: circle;
+    position: relative;
+}
+
+nav ul li::before {
+    content: '•';
+    /* le point de puce */
+    position: absolute;
+    left: -20px;
+    font-size: 20px;
+    /* font size de la puce */
+}
+
+nav ul {
     background-color: salmon;
-    width: 400px;
+    width: 350px;
     height: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    justify-items: center;
+    align-items: center;
+    margin-bottom: 0;
 }
-nav ul li{
+
+nav ul li {
     display: grid;
-   align-items: center;
+    align-items: center;
+    list-style: circle;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.article1 {
+    background-color: lightblue;
+}
+
+.article2 {
+    background-color: yellow;
+
+}
+
+.article3 {
+    background-color: lightgreen;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+h3 {
+    display: grid;
+    justify-self: left;
+    background-color: #396C7D;
+    margin-top: 0;
+    height: 100%;
+    align-content: center;
 }

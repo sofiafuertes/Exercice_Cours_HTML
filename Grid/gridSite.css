@@ -84,4 +84,9 @@ h3 {
     margin-top: 0;
     height: 100%;
     align-content: center;
+    transition-property: background-color;
+    transition: 1s;
+}
+footer :hover{
+    background-color: aqua;
 }

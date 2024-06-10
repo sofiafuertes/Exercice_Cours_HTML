@@ -1,0 +1,55 @@
+.image:hover{
+    transform: scale(1.2);
+    margin: 50px;
+}
+.animation{
+    animation-name: monanimation;
+    width:  500px;
+    font-size: 3em;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes monanimation {
+    from {
+    /* 0% */
+        background-color: red;
+        transform: 0;
+    }
+    20%{
+        background-color: plum;
+        transform: 200px;
+    }
+    40%{
+        background-color: pink;
+        translate: 100px;
+        transform: rotate(2turn);
+    }
+    50%{
+        background-color: powderblue;
+        translate: -100px;
+        transform: skewX(50px);
+    }
+    65%{
+        background-color: purple;
+        transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+    75%{
+        background-color: rebeccapurple;
+        transform: rotateY(60deg);
+    }
+    85%{
+        background-color: blue;
+        transform: rotateX(120deg);
+    }
+    to {
+    /* 100%  */
+        background-color: lightcoral;
+        transform: rotate(5turn);
+    }
+}
+
+.animation:hover{
+    animation: monanimation 5s ease-in infinite;
+}

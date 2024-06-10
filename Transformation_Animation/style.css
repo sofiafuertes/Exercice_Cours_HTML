@@ -1,6 +1,11 @@
+.image{
+    width: 200px;
+    transition-property: width, margin;
+    transition-duration: 4s;
+}
 .image:hover{
-    transform: scale(1.2);
-    margin: 50px;
+    width: 280px;
+    margin: 40px;
 }
 .animation{
     animation-name: monanimation;

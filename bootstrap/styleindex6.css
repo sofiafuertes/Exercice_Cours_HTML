@@ -1,0 +1,8 @@
+#carouselExampleIndicators{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 500px;
+    margin-bottom: 20px;
+
+}

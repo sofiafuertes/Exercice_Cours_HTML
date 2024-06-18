@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Barre nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Voyages</a>
@@ -44,6 +45,7 @@
             </div>
         </div>
     </nav>
+    <!-- Carrousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -76,7 +78,7 @@
         </button>
     </div>
 
-
+    <!-- Accordion -->
     <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -132,30 +134,46 @@
             </div>
         </div>
     </div>
-
+    <!-- Card pub -->
     <div class="row p-5">
         <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Voyage avec AirFrance</h5>
-              <p class="card-text">Profitez des petits prix Air France Réservez sur le Site Officiel®</p>
-              <a href="#" class="btn btn-primary">Réserver mes billets</a>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Voyage avec AirFrance</h5>
+                    <p class="card-text">Profitez des petits prix Air France Réservez sur le Site Officiel®</p>
+                    <a href="https://wwws.airfrance.fr/" class="btn btn-primary" target="_blank">Réserver mes
+                        billets</a>
+                </div>
             </div>
-          </div>
         </div>
         <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Booking</h5>
-              <p class="card-text">Trouvez l'hébergement Idéal, le Plus Grand Site de Voyages au Monde.</p>
-              <a href="#" class="btn btn-primary">Réeserver mon hébergement</a>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Booking</h5>
+                    <p class="card-text">Trouvez l'hébergement Idéal, le Plus Grand Site de Voyages au Monde.</p>
+                    <a href="https://www.booking.com/index.fr.html" class="btn btn-primary" target="_blank">Réserver
+                        mon hébergement</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+    <!-- Form message -->
+    <h1>Laissez nous un message</h1>
+    <div class="contact">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+    <button type="button" class="btn btn-dark">Envoyer</button>
+</div>
 
 
 
+    <!-- link script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

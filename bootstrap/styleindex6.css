@@ -1,8 +1,45 @@
+body{
+    background-color: #fffaf0;
+}
 #carouselExampleIndicators{
     width: 50%;
     display: flex;
     flex-direction: row;
-    margin-left: 500px;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 480px;
 
+}
+@media (max-width:1300px) {
+    #carouselExampleIndicators{
+        width: 90%;
+        margin-left: 30px;
+        }
+}
+#accordionFlushExample{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 1px grey solid;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 10px;
+    width: 40%;
+    border: 2px gray solid;
+}
+
+.mb-3 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+div button{
+    width: 30%;
+    margin: 0 auto 5px;
 }

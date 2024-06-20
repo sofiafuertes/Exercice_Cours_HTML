@@ -1,0 +1,92 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background-color: antiquewhite;
+  color: black;
+  border: 1px navy solid;
+}
+header .barNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90px;
+  gap: 10x;
+}
+header a {
+  color: black;
+  text-decoration: none;
+}
+header li :hover {
+  -webkit-text-decoration: 2px underline navy;
+          text-decoration: 2px underline navy;
+  padding: 5px;
+}
+header li {
+  list-style-type: none;
+  border: 1px navy solid;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin: 2px;
+  padding: 5px;
+}
+header .logoHeader {
+  float: left;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.premierDiv {
+  margin: 10px;
+}
+.premierDiv h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+.premierDiv p {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 5px;
+}
+.premierDiv span {
+  font-weight: bold;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+article .article {
+  border: 1px gainsboro solid;
+  padding: 0 10px 10px 10px;
+  background-color: rgba(250, 235, 215, 0.418);
+}
+article h2 {
+  text-align: start;
+  padding-top: 20px;
+}
+article img {
+  width: 200px;
+  float: inline-start;
+}
+article .info p {
+  padding: 50px;
+}
+
+footer {
+  display: flex;
+  background-color: antiquewhite;
+  margin: 10px 0 10px 0;
+  padding: 0 20px 0 20px;
+  justify-content: space-between;
+  border: 1px navy solid;
+}
+footer div {
+  align-self: center;
+}/*# sourceMappingURL=styleAccueil.css.map */

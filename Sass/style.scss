@@ -1,0 +1,9 @@
+div{
+    background-color: royalblue;
+    p{
+        color: white;
+    }
+    & :hover{
+        background-color:salmon
+    }
+}

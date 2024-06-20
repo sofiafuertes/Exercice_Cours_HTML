@@ -1,0 +1,9 @@
+div {
+  background-color: royalblue;
+}
+div p {
+  color: white;
+}
+div :hover {
+  background-color: salmon;
+}/*# sourceMappingURL=style.css.map */

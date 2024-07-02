@@ -1010,5 +1010,192 @@ for(let i=0 ; i<4 ; i++){
 }
 */
 
-//C6
+/*
+//D6
+//Initialisation
+setPos(100,250);
+changeColor(color.blue);
+setLineWidth(6);
+faceRight();
+let longueur = 100 ;
+//Realisation
+forward (longueur);
+faceDown();
+longueur = 200;
+forward (longueur); 
+faceRight();
+longueur = 300;
+forward(longueur);
+*/
 
+/*
+//D7
+//Initialisation
+setPos(200,450);
+changeColor(color.red);
+setLineWidth(6);
+faceUp();
+let longueur = 100 ;
+//Realisation
+forward(longueur);
+faceRight();
+forward(longueur);
+faceUp();
+longueur=200;
+forward(longueur);
+faceLeft();
+forward(longueur);
+faceDown();
+longueur=100;
+forward(longueur);
+*/
+
+/*
+//D8
+//Initialisation
+setPos(200,150);
+changeColor(color.yellow);
+setLineWidth(6);
+faceRight();
+let longueur = 200 ;
+//Realisation
+forward(longueur);
+faceDown();
+forward(longueur);
+for(let i=0 ; i<2 ; i++){
+    faceLeft();
+    longueur = 100; 
+    forward(longueur);
+    faceUp();
+    forward(longueur);
+}
+*/
+/*
+//D9
+//Initialisation
+setPos(300,250);
+changeColor(color.yellow);
+setLineWidth(6);
+faceRight();
+
+//Realisation
+let length = 50 ;
+for(let i=0 ; i<6 ; i++){
+forward(length);
+right(120);
+length += 50; 
+}
+*/
+
+/*
+//D10
+//Initialisation
+setPos(300,250);
+changeColor(color.yellow);
+setLineWidth(6);
+faceRight();
+//Realisation
+let length=50;
+for(let i=0 ; i<10 ; i++){
+    forward(length);
+    right(90);
+    length += 50; 
+}
+*/
+
+/*
+//D11
+//Initialisation
+setPos(100,250);
+changeColor(color.black);
+setLineWidth(6);
+faceRight();
+//Realisation
+let length=125; 
+for(let i=0 ; i<5 ; i++){
+
+    for(let j=0 ; j<4 ; j++){
+        forward(length);
+        left (120); 
+    }
+    right(120);
+    length += -25;
+}
+*/
+
+/*
+//D12
+//Initialisation
+setPos(350,350);
+changeColor(color.aqua);
+setLineWidth(6);
+faceRight();
+//Realisation
+let length = 50; 
+for(let i=0 ; i<6 ; i++){
+
+    for(let j=0; j<3 ; j++){
+        forward(length);
+        left (120);
+    }
+    forward(length);
+    left (60);
+    length += 25;
+}
+*/
+/*
+//D13
+//Initialisation
+setPos(350,350);
+changeColor(color.fuchsia);
+setLineWidth(6);
+faceRight();
+//Realisation
+let length = 50;
+for(let i=0 ; i<8 ; i++){
+    arcRight( length, 180);
+    up ();
+    forward(50);
+    down();
+    length += 25;
+}
+*/
+
+/*
+//D14 
+//Initialisation
+setPos(50,350);
+changeColor(color.green);
+setLineWidth(6);
+faceRight();
+left(40);
+//Realisation
+for(let i=0 ; i<2 ; i++){
+    let length = 25;
+    for(let j=0 ; j<4  ; j++){
+        forward(length);
+        right(90);
+        forward(length);
+        left(90); 
+        length += 25; 
+    } 
+    for(let k=0 ; k<2 ; k++){
+        right(90);
+    }
+}
+*/
+//D15
+//Initialisation
+setPos(100,350);
+changeColor(color.red);
+setLineWidth(6);
+faceDown();
+//Realisation
+let length = 100;
+let angle = 90; 
+for(let i=0 ; i<10 ; i++){
+    forward(length);
+    left (angle); //(180 - angle)
+    length += 20; 
+    angle += -5;
+}

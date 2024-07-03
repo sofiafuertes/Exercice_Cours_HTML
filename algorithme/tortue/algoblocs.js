@@ -1184,6 +1184,8 @@ for(let i=0 ; i<2 ; i++){
     }
 }
 */
+
+/*
 //D15
 //Initialisation
 setPos(100,350);
@@ -1199,3 +1201,5 @@ for(let i=0 ; i<10 ; i++){
     length += 20; 
     angle += -5;
 }
+*/
+

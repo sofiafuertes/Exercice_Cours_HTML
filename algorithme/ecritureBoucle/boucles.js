@@ -5,13 +5,20 @@ for(let i = 0 ; i < 50 ; i++) {
 }
 
 // Exercice 2 : écrire dans la console :
-console.log("Exercice 2");
+console.log("Exercice 2"); //solution attendu
 
 for(let i = 0 ; i < 5 ; i++){
     console.log("A");
     console.log("B");
 }
-
+console.log("Exercice 2 bis");
+for(let i=0; i<10 ; i++){
+    if(i%2 == 0){
+        console.log("A");
+    } else{
+        console.log("B");
+    }
+}
 // A
 // B
 // A
@@ -44,13 +51,23 @@ for(let i = 0 ; i < 5 ; i++){
 // A
 // A
 // B
-console.log("Exercice 3");
+console.log("Exercice 3"); //solution attendu
 for(let i=0 ; i<3 ; i++){
     for(let j=0 ; j<5 ; j++){
         console.log("A");
     }
     console.log("B");
 }
+console.log("Exercice 3 bis"); //"B" il se repete 1 fois sur 6: 5%6=5 11%6=5 17%6=5. 
+for(let i=0 ; i<18 ; i++){
+    if(i%6 == 5){
+        console.log("B" /* , "i vaut" , i ," i%6 vaut", i%6*/ ); //pour voir le modulo de chaque i 
+    }else{
+        console.log("A");
+    }
+}
+
+
 
 // Exercice 4 : écrire dans la console :
 // 0
@@ -63,9 +80,16 @@ for(let i=0 ; i<3 ; i++){
 // 7
 // 8
 // 9
-console.log("Exercice 4");
+console.log("Exercice 4"); //solution attendu
 for(let i=0 ; i<10 ; i++){
     console.log(i);
+}
+
+console.log("Exercice 4 bis");
+let counter4=0;
+for (let i = 0 ; i < 10 ; i++) {
+    console.log(counter4);
+    counter4++;
 }
 
 // Exercice 5 : écrire dans la console :
@@ -79,11 +103,20 @@ for(let i=0 ; i<10 ; i++){
 // 10
 // 11
 // 12
-console.log("Exercice 5");
+console.log("Exercice 5"); //Pour i qui vq de 0 à 10  - solution attendu
 for(let i=3 ; i<=12 ; i++){
     console.log(i);
 }
-
+console.log("Exercice 5 bis"); //Répéter 10 fois
+let counter5=3;
+for (let i = 0 ; i < 10 ; i++) {
+    console.log(counter5);
+    counter5++;
+}
+console.log("Exercice 5 bis bis");
+for (let i=0; i<10; i++){
+    console.log(i+3);
+}
 // Exerice 6 : écrire dans la console :
 // 0
 // 1
@@ -96,11 +129,31 @@ for(let i=3 ; i<=12 ; i++){
 // 0
 // 1
 console.log("Exercice 6");
-for(let i = 0; i<3 ; i++){
+for(let i = 0; i<2 ; i++){
     for(let j=0 ; j<4; j++){
         console.log(j);
     }
 }
+console.log("0");
+console.log("1");
+
+console.log("Exercice 6 bis");
+let counter6=0;
+for(let i = 0; i<2 ; i++){
+    console.log(counter6);
+    counter6++;
+    if(counter6 == 4){
+        counter6 = 0
+    }
+}
+console.log("Exercice 6 bis bis"); //modulo 4 - solution attendu
+for(let i=0 ; i<10; i++){
+    console.log(i%4);
+}
+
+
+
+
 // Exercice 7 : écrire dans la console :
 // 0
 // 1
@@ -113,6 +166,76 @@ for(let i = 0; i<3 ; i++){
 // 8
 // 9
 console.log("Exercice 7");
+for (let i=0 ; i<5 ; i++){
+    console.log(i);
+}
+for(let j=0; j<3 ; j++){
+    console.log("A");
+}
+for(let i=8 ; i<10 ; i++){
+    console.log(i)
+}
+
+console.log("Exercice 7 bis");
+for (let i=0 ; i<10 ; i++){
+    if(i == 5){
+        console.log("A");
+    } else {
+        if(i == 6) {
+            console.log("A");
+        } else {
+            if(i == 7) {console.log("A");
+            } else{ 
+                console.log(i);
+            }
+        }
+    }
+}
+
+console.log("Exercice 7 bis bis");
+for (let i=0 ; i<10 ; i++){
+    if(i == 5){
+        console.log("A");
+    } else if(i == 6) {
+        console.log("A");
+    } else if(i == 7) {
+        console.log("A");
+    } else{ 
+        console.log(i);
+}
+}
+
+console.log("Exercice 7 bis bis bis");
+for (let i=0 ; i<10 ; i++){
+    if(i>4 && i<8){ //i est compirs entre 4 et 8
+        console.log("A")
+    } else {
+        console.log(i);
+    }
+}
+console.log("Exercice 7 bis bis bis bis");
+for (let i=0 ; i<10 ; i++){
+    if(i>4){ //si il est plus grand que 4 mais plus petit que 8
+        if(i<8){ 
+        console.log("A")
+        } else{
+            console.log(i);
+        }
+    } else {
+        console.log(i);
+    }
+}
+console.log("Exercice 7 bis bis bis bis bis");
+for (let i=0 ; i<10 ; i++){ 
+    if(i<=4 || i>=8){ //il n'est pas compris entre 4 et 8
+        console.log(i)
+    } else{
+        console.log("A")
+    }
+}
+
+//le contraire de i est compris entre 4 et 8:  if (!(i>4 && i<8))
+
 
 // Exercice 8 : écrire dans la console :
 // 100
@@ -126,6 +249,22 @@ console.log("Exercice 7");
 // 8
 // 109
 console.log("Exercice 8");
+for(let i=0; i<10 ; i++){
+    if(i%3 == 0){
+    console.log(i+100);
+    } else{
+        console.log(i);
+    }
+}
+
+console.log("Exercice 8 bis");
+for(let i=0; i<10 ; i++){
+    if(i == 0 || i == 3 || i == 6 || i == 9){
+    console.log(i+100);
+    } else{
+        console.log(i);
+    }
+}
 
 // Exercice 9 : écrire dans la console :
 // 0
@@ -139,7 +278,31 @@ console.log("Exercice 8");
 // 208
 // 9
 console.log("Exercice 9");
-
+for (let i=0 ; i<10 ; i++){
+    if(i%3 == 1){
+        console.log(i + 100);
+    } 
+    if(i%3 == 2){
+        console.log(i + 200);
+    } 
+    if(i%3 == 0){
+        console.log(i);
+    }
+}
+console.log("Exercice 9 bis");
+for (let i=0 ; i<10 ; i++){
+    if(i%3 == 0){
+        console.log(i);
+    } else if(i%3 == 1){
+        console.log(i + 100);
+    } else{
+        console.log(i + 200);
+    }
+}
+console.log("Exercice 9 bis bis");
+for (let i=0 ; i<10 ; i++){
+        console.log(i + (i%3)*100);
+}
 // Exercice 10 : écrire dans la console tous les résultats possibles de lancers de deux dés :
 // 1 1
 // 1 2
@@ -150,15 +313,34 @@ console.log("Exercice 9");
 // 6 6
 console.log("Exercice 10");
 // TODO
+for(let i=1 ; i<7 ; i++){
+    for(let j=1 ; j<7 ; j++){
+        console.log(i , j);
+    }
+}
+
+
 
 // Exercice 11 : adapter l'exercice précédent pour enlever les doublons (on ne veut pas afficher 1 2 et 2 1, mais seulement l'un des deux).
 console.log("Exercice 11");
 // TODO
-
+let count1=0;
+for(let i = 0; i < 6; i++) {
+    for(let j = count1; j < 6; j++) {
+        console.log(i+1, j+1);
+    }
+    count1 += 1;
+}
 // Exercice 12 : en prenant des dés à 20 faces, combien de résultats différents (sans doublon) peut-on afficher ? (Autrement dit : adapter le code précédent pour compter les résultats au lieu de les afficher)
 console.log("Exercice 12");
 // TODO
-
+let count = 0;
+for(let i = 0; i < 20; i++) {
+    for(let j = count; j < 20; j++) {
+        console.log(i+1, j+1);
+    }
+    count += 1;
+}
 // Exercice 13 : afficher la table de multiplication de 1 (de 1 à 9):
 // 1x1 = 1
 // 1x2 = 2
@@ -171,6 +353,9 @@ console.log("Exercice 12");
 // 1x9 = 9
 console.log("Exercice 13");
 // TODO
+for(let i=1; i<10 ; i++){
+    console.log("1x"+ i + "=" + 1*i);
+}
 
 // Exercice 14 : que faut-il modifier du code précédent pour obtenir la table de 2 :
 // 2x1 = 2
@@ -184,7 +369,9 @@ console.log("Exercice 13");
 // 2x9 = 18
 console.log("Exercice 14");
 // TODO
-
+for(let i=1; i<10 ; i++){
+    console.log("2x" + i +  "=" + 2*i);
+}
 // Exercice 15 : comment généraliser pour afficher toutes les tables de multiplication de 1 à 9 :
 // 1x1 = 1
 // 1x2 = 2
@@ -196,10 +383,20 @@ console.log("Exercice 14");
 // 9x9 = 81
 console.log("Exercice 15");
 // TODO
+for(let i=1; i<10 ; i++){
+    for(let j=1 ; j<10 ; j++){
+        console.log(i + "x" + j + "=" + i*j);
+    }
+    }
+
 
 // Exercice 16 : calculer 1+2+3+4+...+99+100. (Vous devriez trouver 5050)
 console.log("Exercice 16");
 // TODO
+let n=100; 
+for(let i=1 ; i<=1; i++){
+    console.log(n/2*(i+100));
+}
 
 // Exercice 17 : trouver le nombre n tel que 1+2+3+4+5+...+(n-1)+n = 302253
 console.log("Exercice 17");
@@ -269,4 +466,3 @@ console.log("Exercice 22");
     *
 */
 console.log("Exercice 23");
-// TODO

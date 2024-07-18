@@ -361,7 +361,6 @@ let premierH1 = document.querySelector('h1');
 //! insertBefore, on selectionne 2 éléments pour placer l'un avant l'autre
 document.body.insertBefore(allParagraphes[2],premierH1);
 */
-console.log('Phase 1,2 et 3');
 console.log('Phase 1, 2 et 3');
 // Phase1 
 let lestxt = document.getElementsByClassName('change'); 
@@ -528,6 +527,7 @@ console.log(voiture);
 //la variable va a continue etre accesible en dehors de ce function). C'est mieux utiliser 'let' ou 'const' que ils ont une portée bloc ou local (Il ne peut pas être 
 //accessible en dehors du bloc de code particulier). Quand meme, prendre l'habitude de toujours nommé different tes variables. 
 
+//!Quizz : ca bug
 var car = "Nissan";
 
 if(car=="Nissan"){
@@ -539,3 +539,126 @@ console.log(vitesse);
 //donc si tu declares un variable avec var dedans une boucle tu peux lappeler dehors le boucle. 
 //Mais c'est pas un bonne habitude. Si tu essaie de utiliser let en ce cas, 
 //tu vas voir que ça marche pas et tu vas devoir mettre le console log dedans ta boucle.
+
+//!Quizz : ca bug
+let superCar = 'BMW';
+const superModel = 'Sport';
+
+if(superCar =='BMW'){
+    const superVitesse = 900;
+    let superCar = "Citroen";
+    console.log(superCar);
+}
+console.log(superCar);
+
+//C'est normal que avec ton 2ème console.log il affiche BMW parce que c'est la valeur dehors de la boucle et 
+//le console.log dedans la boucle il va prendre le nouvau valeur définie dedans la boucle.
+//Tu as nommé les 2 'let' de la même façon et ça peut être un problème au futur.
+//Et aussi tu as déclaré deux variables que tu n'utilises pas du tout, donc si elles ne sont pas nécessaires pour ta boucle 
+//ou ton code, c'est mieux de ne pas les déclarer.
+
+
+//* Exemple de modification d'une propriété d'un objet qui est une const (exception)
+//! Exception constante modif ? 
+const MyTracklist = {
+  track1:'lofteurs up and down',
+  track2:'David Hallyday',
+  track3:'Crazy Frog'
+}
+
+//! on peut modifier une propriete d'un objet meme si l'objet est declare avec const
+console.log(MyTracklist);
+
+MyTracklist.track1 = 'félicien'; 
+MyTracklist.track5 = 'JOJO'; 
+
+console.log(MyTracklist);
+
+//! meme choses avec tableau dedans tableau
+const tableau=[[1,2,3], 2];
+tableau[0][1] = 6;
+console.log(tableau);
+
+/*
+let firstLink = document.querySelector('a');
+console.log(firstLink);
+//let allLinks = document.getElementsByTagName('a');
+//console.log(allLinks);
+
+let firstTitle = document.querySelector('h1');
+console.log(firstTitle);
+
+let firstImg = document.querySelector('img');
+console.log(firstImg);
+
+firstTitle.style.backgroundColor = 'blue';
+firstTitle.style.color = 'beige';
+// On accède directement aux porpiétés de l'objet qui correspondent aux attributs HTML
+firstTitle.className = 'laClasse';
+//firstLink.href = 'https://www.google.com';
+firstImg.src = 'https://picsum.photos/200/300';
+
+// On a une fonction native pour modifier n'importe quel attribut
+firstTitle.setAttribute('class','laClasse');
+firstTitle.setAttribute('bidule','toto');
+firstLink.setAttribute('href','https://www.googlllllle.com');
+firstImg.setAttribute('src','https://picsum.photos/200/300');
+firstImg.setAttribute('alt','une super img');
+*/
+
+//* Exercice changer le title quand on click
+//Creation h1
+const newTitle = document.createElement('h1'); 
+newTitle.className = "newTitle"
+newTitle.innerText = 'D.O.M Events';
+appDiv.append(newTitle);
+//Selectioner H1 par son nom de Class
+const titleChange = document.getElementsByClassName('newTitle');
+console.log( titleChange);
+//Changement de HtmlCollection a Array
+const changeArray = Array.from (titleChange);
+//Function map et addEventListener pour change le title
+//changeArray.map(change => change.addEventListener("click", function(){change.innerHTML= '--🥶--'}));
+
+//version reclick 
+let selectTitle= false; 
+newTitle.addEventListener('click', function(){
+  console.log('ok ca click'); 
+  newTitle.innerText = selectTitle ? '-- 🥳 --':'D.O.M Events'; //? condition ternaire si selectTitle est vrai alors smiley sinon dom Events
+  selectTitle = !selectTitle; // ? à chaque click le booléen passe à son inverse (pour faire le re click)
+});
+
+/* avec querySelector
+//* ADD CLASSE
+const  classe1 = document.querySelector('.link1'); 
+console.log(classe1);
+classe1.addEventListener("click", function(){ 
+    const addClasse = document.getElementById('titleH2').classList; addClasse.add("style");
+})
+//* REMOVE CLASSE
+const classe2 = document.querySelector('.link2');
+console.log(classe2);
+classe2.addEventListener("click", function(){
+    const addClasse = document.getElementById('titleH2').classList; addClasse.remove("style");
+})
+//*TOGGLE CLASSE
+const classe3 = document.querySelector('.link3');
+console.log(classe3);
+classe3.addEventListener("click", function(){
+    const addClasse = document.getElementById('titleH2').classList; addClasse.toggle("style");
+})
+  */
+
+// Avec querySelectorAll 
+const liens = document.querySelectorAll('a'); 
+console.log(liens);
+
+liens[0].addEventListener("click", function(){ 
+    const addClasse = document.getElementById('titleH2').classList; addClasse.add("style");
+})
+liens[1].addEventListener("click", function(){ 
+  const addClasse = document.getElementById('titleH2').classList; addClasse.remove("style");
+})
+liens[2].addEventListener("click", function(){ 
+  const addClasse = document.getElementById('titleH2').classList; addClasse.toggle("style");
+})
